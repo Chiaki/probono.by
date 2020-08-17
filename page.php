@@ -30,6 +30,7 @@ get_header();
                 </div>
             </div>
 		</div><!--hero-->
+
 		
         <main class="main-content pb70">
             <div class="bg-primary pt40 pb40">
@@ -49,6 +50,56 @@ get_header();
                     <div class="row pt50 pb50">
                         <div class="col-lg-12">
                             <?php the_content(); ?>
+                        </div>
+                    </div>
+                    <div class="row pt50 pb50">
+                        <div class="col-lg-12">
+                            
+							<div class="container pt90 pb50" id="about">
+								<div class="section-title mb40">
+									<h3 class="text-center">
+										Памятки
+									</h3>
+								</div>
+								<div class="row">
+									<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 mb40 text-center">
+										Мы собрали ряд памяток с информацией о том, какие шаги предпринять, если вы оказались в сложной ситуации
+									</div>
+								</div>
+								<div class="row">
+									<?php
+										$page_ID = get_the_ID();
+										$posts = get_posts( array(
+											'numberposts'     => -1, // тоже самое что posts_per_page
+											'orderby'         => 'post_date',
+											'order'           => 'DESC',
+											'post_type'       => 'memo',
+											'post_status'     => 'publish'
+										) );
+										foreach($posts as $p){
+											global $post;
+											$post = $p;
+											setup_postdata($post);
+											if (get_field("page") !== $page_ID) continue;
+											?>
+											<div class="col-lg-4 mb40">
+												<div class="practice-card">
+													<div class="content-box">
+														<h5><?php the_title(); ?></h5>
+														<p>
+														<?php the_excerpt(); ?>
+														</p>
+														<a href="<?php the_permalink(); ?>" class="btn btn-link">Подробнее</a>
+													</div>
+												</div>
+											</div><!--col-->
+											<?php
+										}
+										wp_reset_postdata();
+									?>
+									
+								</div>
+							</div><!--container-->
                         </div>
                     </div>
                 </div>

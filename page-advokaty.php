@@ -131,6 +131,7 @@ get_header();
             </div>
             <div class="row">
                 <?php
+                    $page_ID = get_the_ID();
                     $posts = get_posts( array(
                         'numberposts'     => -1, // тоже самое что posts_per_page
                         'orderby'         => 'post_date',
@@ -142,6 +143,7 @@ get_header();
                         global $post;
                         $post = $p;
                         setup_postdata($post);
+                        if (get_field("page") !== $page_ID) continue;
                         ?>
                         <div class="col-lg-4 mb40">
                             <div class="practice-card">
