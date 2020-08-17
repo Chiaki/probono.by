@@ -41,19 +41,6 @@ get_header();
         </div><!--hero-->
 
         <main class="main-content pb70">
-        
-        <div class="bg-primary pt40 pb40">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <h2 class=" mt5  h2  text-white text-center mt10 mb10"><?php the_field('teaser_text', 'option'); ?></h2>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <a href="tel:<?php the_field('phone', 'option'); ?>" class="btn btn-lg btn-white btn-rounded mt10 mb10"><?php the_field('teaser_button_text', 'option'); ?></a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="bg-faded pt90 pb50">
             <div class="container">
