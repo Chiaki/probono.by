@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-    <div id="home" class="fullscreen-hero bg-parallax" data-jarallax='{"speed": 0.4}' style='background-image: url("<?php echo get_template_directory_uri();?>/images/bg3.jpg");'>
+    <div id="home" class="fullscreen-hero bg-parallax" data-jarallax='{"speed": 0.4}' style='background-image: url("<?php echo get_template_directory_uri();?>/images/legal.jpg");'>
         <div class="hero-content">
             <div class="hero-inner">
                 <div class="container">

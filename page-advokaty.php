@@ -14,7 +14,7 @@
 
 get_header();
 ?>
-        <div id="home" class="fullscreen-hero bg-parallax" data-jarallax='{"speed": 0.4}' style='background-image: url("<?php echo get_template_directory_uri();?>/images/bg3.jpg");'>
+        <div id="home" class="fullscreen-hero bg-parallax" data-jarallax='{"speed": 0.4}' style='background-image: url("<?php echo get_template_directory_uri();?>/images/legal.jpg");'>
             <div class="hero-content">
                 <div class="hero-inner">
                     <div class="container">
@@ -91,19 +91,6 @@ get_header();
                 </div>
             </div>
         </div>
-        
-        
-        <div class="bg-parallax pt40 pb20" data-jarallax='{"speed": 0.4}' style='background-image: url("<?php echo get_template_directory_uri();?>/images/bg3.jpg")'>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 text-center  mb40">
-                        <h2 class="text-white h1 counter">2</h2>
-                        <h4 class="text-white">адвоката</h6>
-                    </div><!--col-->
-                </div>
-            </div>
-        </div><!--facts-->
-        
 
         <div class="container pt90 pb50" id="about">
             <div class="section-title mb40">
