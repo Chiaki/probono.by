@@ -70,7 +70,7 @@ get_header();
                     <div class="practice-card">
                         <img src="<?php echo get_template_directory_uri();?>/images/advocate.jpg" alt="" class="img-fluid">
                         <div class="content-box">
-                            <h5>Адвокатская помощь</h5>
+                            <h5>Адвокаты</h5>
                             <p>
                             Инициатива "Адвокаты с народом"
                             </p>
