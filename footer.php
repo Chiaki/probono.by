@@ -38,6 +38,12 @@
                         </span>
                         */ ?>
                         <img src="<?php echo get_template_directory_uri();?>/images/logo.svg" alt="">
+                        <?php if ($copyright = get_field('footer_copyright', 'global-options')) { ?>
+                          <p class="mt10 mb0">
+                              <?php echo $copyright; ?>
+                          </p>
+                        <?php } ?>
+
                     </div>
                     <div class="col-lg-8 text-right">
                         <ul class="list-inline">
