@@ -72,7 +72,7 @@ get_header();
                         <div class="content-box">
                             <h5>Адвокаты</h5>
                             <p>
-                            Инициатива "Адвокаты с народом"
+                            Инициативы адвокатов, готовых защищать вас в судах.
                             </p>
                             <a href="/advokaty" class="btn btn-link">Подробнее</a>
                         </div>
